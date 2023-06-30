@@ -45,8 +45,8 @@ function Hero() {
           />
         </div>
         <div className="flex flex-col lg:flex-row items-center justify-center mx-6 lg:mx-0 gap-9 mt-8 mb-10">
-          <Link
-            to="#projects"
+          <a
+            href="#projects"
             className=" text-[#01cbb4] text-xl py-3 px-6 rounded-sm font-semibold w-full lg:w-auto justify-center border border-[#435160] flex gap-2 hover:bg-[#113134]"
           >
             <Icon
@@ -54,7 +54,7 @@ function Hero() {
               style={{ color: "#01cbb4", fontSize: "30px" }}
             />
             See My Works
-          </Link>
+          </a>
           <button className="bg-[#01FEE2] text-[#161b1f] text-xl py-3 px-6 rounded-sm font-semibold flex gap-2 hover:bg-[#01CBB4] w-full lg:w-auto justify-center">
             <Icon
               icon="material-symbols:download"

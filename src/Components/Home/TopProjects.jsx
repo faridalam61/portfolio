@@ -48,6 +48,8 @@ function TopProjects() {
             "devicon:nodejs",
             "devicon:tailwindcss",
           ]}
+          github="http://github.com"
+          liveLink="#"
         />
         <ProjectCard
           image={porject1}
@@ -58,6 +60,8 @@ function TopProjects() {
             "devicon:nodejs",
             "devicon:tailwindcss",
           ]}
+          github="http://github.com"
+          liveLink="#"
         />
         <ProjectCard
           image={porject1}
