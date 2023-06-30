@@ -8,7 +8,7 @@ function TopProjects() {
   return (
     <div className="my-10" id="projects">
       <div className="container px-6 lg:px-0 mx-auto mt-32">
-        <h2 className="text-4xl text-center font-light text-white mb-4">
+        <h2 className="text-4xl text-center font-normal text-white mb-4 rainbow-text">
           Projects
         </h2>
         <p className="text-white text-center mb-14">
@@ -26,6 +26,8 @@ function TopProjects() {
             "devicon:nodejs",
             "devicon:tailwindcss",
           ]}
+          github="http://github.com"
+          liveLink="#"
         />
         <ProjectCard
           image={porject1}

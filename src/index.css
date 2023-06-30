@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-
+/* Profile picture border */
 .rounded-gradient-borders {
     width: 176px;
     height: 176px;
@@ -19,13 +19,14 @@
     filter: drop-shadow(0 0px 30px #01fee06e);
 }
 
+/* Project box gradient color */
 .rainbow-box {
     border: 1px solid transparent;
     border-image: linear-gradient(to bottom right, green 0%, violet 100%);
     border-image-slice: 1;
 }
 
-
+/* Image scroll */
 .screen {
     display: block;
     height: 300px;
@@ -58,3 +59,13 @@
     -o-transition: all 3s;
     transition: all 3s;
 }
+
+/* Gradinet text */
+.rainbow-text {
+    background: linear-gradient(to right,  #7befff 0%, #07c926 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+    

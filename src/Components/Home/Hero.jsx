@@ -15,10 +15,10 @@ function Hero() {
           />
         </div>
 
-        <h1 className="mt-6 text-black dark:text-white text-4xl font-bold">
+        <h1 className="mt-8 text-black dark:text-white text-4xl font-bold rainbow-text uppercase">
           HI, I'm Farid Alam
         </h1>
-        <h2 className="mt-4 text-black dark:text-white text-xl font-semibold">
+        <h2 className="mt-4 text-black dark:text-white text-xl rainbow-text">
           MERN Stack Developer
         </h2>
         <p className="text-white mx-6 lg:mx-96 mt-8">
@@ -44,7 +44,7 @@ function Hero() {
             style={{ color: "white", fontSize: "36px" }}
           />
         </div>
-        <div className="flex flex-col lg:flex-row items-center justify-center mx-6 lg:mx-0 gap-9 mt-8">
+        <div className="flex flex-col lg:flex-row items-center justify-center mx-6 lg:mx-0 gap-9 mt-8 mb-10">
           <Link
             to="#projects"
             className=" text-[#01cbb4] text-xl py-3 px-6 rounded-sm font-semibold w-full lg:w-auto justify-center border border-[#435160] flex gap-2 hover:bg-[#113134]"

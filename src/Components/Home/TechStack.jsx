@@ -6,7 +6,7 @@ function TechStack() {
   return (
     <div>
       <div className="container px-4 lg:px-0 mx-auto mb-10 mt-10 lg:mt-20">
-        <h2 className="text-center font-light text-4xl mb-10 lg:mb-0 text-white">
+        <h2 className="text-center font-normal text-4xl mb-10 lg:mb-0 text-white rainbow-text">
           My Tech Stack
         </h2>
         <div className="flex flex-col lg:flex-row justify-between items-center gap-14">
@@ -14,7 +14,7 @@ function TechStack() {
             <img src={coder} alt="" />
           </div>
 
-          <div className="w-full lg:w-1/2 grid grid-cols-3 lg:grid-cols-5 gap-5">
+          <div className="w-full lg:w-1/2 grid grid-cols-3 lg:grid-cols-5 gap-4">
             <div className="text-center">
               <Icon
                 icon="grommet-icons:reactjs"
@@ -41,11 +41,27 @@ function TechStack() {
             </div>
             <div className="text-center">
               <Icon
+                icon="simple-icons:express"
+                style={{ color: "#fff", fontSize: "40px" }}
+                className="mx-auto"
+              />
+              <p className="text-white mt-2 mb-4">Express</p>
+            </div>
+            <div className="text-center">
+              <Icon
                 icon="devicon:mongodb"
                 style={{ color: "#fff", fontSize: "40px" }}
                 className="mx-auto"
               />
               <p className="text-white mt-2 mb-4">MongoDB</p>
+            </div>
+            <div className="text-center">
+              <Icon
+                icon="teenyicons:nextjs-outline"
+                style={{ color: "#fff", fontSize: "40px" }}
+                className="mx-auto"
+              />
+              <p className="text-white mt-2 mb-4">NextJs</p>
             </div>
             <div className="text-center">
               <Icon
