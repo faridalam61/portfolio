@@ -19,3 +19,42 @@
     filter: drop-shadow(0 0px 30px #01fee06e);
 }
 
+.rainbow-box {
+    border: 1px solid transparent;
+    border-image: linear-gradient(to bottom right, green 0%, violet 100%);
+    border-image-slice: 1;
+}
+
+
+.screen {
+    display: block;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1px;
+    margin: 0 auto;
+}
+
+.screen img {
+    bottom: -120px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: top 5s;
+    -moz-transition: top 5s;
+    -ms-transition: top 5s;
+    -o-transition: top 5s;
+    transition: bottom 1s;
+}
+
+.screen:hover img {
+    bottom: 0;
+    -webkit-transition: all 3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+    -o-transition: all 3s;
+    transition: all 3s;
+}
