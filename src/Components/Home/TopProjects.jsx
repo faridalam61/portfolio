@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function TopProjects() {
   return (
     <div className="my-10" id="projects">
-      <div className="container mx-auto mt-32">
+      <div className="container px-6 lg:px-0 mx-auto mt-32">
         <h2 className="text-4xl text-center font-light text-white mb-4">
           Projects
         </h2>
@@ -16,7 +16,7 @@ function TopProjects() {
           nihil.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-8 container mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-6 lg:px-0 container mx-auto">
         <ProjectCard
           image={porject1}
           title="Personal Porfolio website"
