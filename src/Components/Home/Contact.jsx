@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Icon } from "@iconify/react";
+import { motion } from "framer-motion";
 
 function Contact() {
   const form = useRef();
@@ -28,7 +29,13 @@ function Contact() {
       );
   };
   return (
-    <div className="mb-20">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0.2 }}
+      className="mb-20"
+    >
       <h2 className="text-center font-normal text-4xl mb-10 lg:mb-0 text-white rainbow-text mt-28">
         Get In Touch
       </h2>
@@ -39,19 +46,19 @@ function Contact() {
 
       <div className=" rounded-md p-6 w-full lg:w-3/5 mx-auto">
         <form ref={form} onSubmit={sendEmail}>
-          <div className="flex gap-5">
+          <div className="flex flex-col lg:flex-row gap-5">
             <input
               type="text"
               name="user_name"
               placeholder="Name"
-              className="w-1/2 py-3 px-4 bg-[#161B1F] text-white rounded-sm"
+              className="w-full lg:w-1/2 py-3 px-4 bg-[#161B1F] text-white rounded-sm"
               required
             />
             <input
               type="email"
               name="user_email"
               placeholder="Email"
-              className="w-1/2 py-3 px-4 bg-[#161B1F] text-white rounded-sm"
+              className="w-full lg:w-1/2 py-3 px-4 bg-[#161B1F] text-white rounded-sm"
               required
             />
           </div>
@@ -77,7 +84,7 @@ function Contact() {
           <p className="text-white text-xl font-light text-center">{status}</p>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

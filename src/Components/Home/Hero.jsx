@@ -2,18 +2,24 @@ import React from "react";
 import person from "../../assets/person.png";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
     <div className="h-screen flex items-center justify-center text-center">
       <div>
-        <div class="rounded-gradient-borders">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="rounded-gradient-borders"
+        >
           <img
             src={person}
             alt=""
             className="element w-full h-full rounded-full mx-auto"
           />
-        </div>
+        </motion.div>
 
         <h1 className="mt-8 text-black dark:text-white text-4xl font-bold rainbow-text uppercase">
           HI, I'm Farid Alam

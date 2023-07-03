@@ -5,6 +5,7 @@ import porject2 from "../../assets/projects/project-2.png";
 import porject3 from "../../assets/projects/project-3.png";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function TopProjects() {
   return (
@@ -14,11 +15,16 @@ function TopProjects() {
           Projects
         </h2>
         <p className="text-white text-center mb-14">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
-          nihil.
+          Here is some mern stack projects that I've completed recently
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-6 lg:px-0 container mx-auto">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.2 }}
+        className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-6 lg:px-0 container mx-auto"
+      >
         <ProjectCard
           image={porject2}
           title="Food Hub - Recipe hunter website"
@@ -33,6 +39,7 @@ function TopProjects() {
           github="https://github.com/faridalam61/food-hub-client"
           liveLink="https://food-hub-6c467.web.app/"
         />
+
         <ProjectCard
           image={porject3}
           title="Yoga Fit – Course enrollment website "
@@ -48,6 +55,7 @@ courses."
           github="https://github.com/faridalam61/Yoga-Fit"
           liveLink="https://summer-camp-school-645ed.web.app/"
         />
+
         <ProjectCard
           image={porject4}
           title="Little Racer – Toy marketplace website  "
@@ -63,7 +71,7 @@ Tailwind CSS."
           github="https://github.com/faridalam61/toy-marketplace"
           liveLink="https://toy-car-e96c2.web.app/"
         />
-      </div>
+      </motion.div>
       <div className="container mx-auto px-6 lg:px-0 flex flex-col items-center">
         <Link
           to="/projects"
