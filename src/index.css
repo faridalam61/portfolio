@@ -29,7 +29,7 @@
 /* Image scroll */
 .screen {
     display: block;
-    height: 300px;
+    height: 250px;
     overflow: hidden;
     position: relative;
     border-radius: 1px;
@@ -37,7 +37,7 @@
 }
 
 .screen img {
-    bottom: -120px;
+    bottom: -200px;
     width: 100%;
     height: auto;
     position: absolute;

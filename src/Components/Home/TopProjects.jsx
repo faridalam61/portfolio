@@ -1,6 +1,8 @@
 import React from "react";
 import ProjectCard from "../Shared/ProjectCard";
 import porject1 from "../../assets/projects/project-1.png";
+import porject2 from "../../assets/projects/project-2.png";
+import porject3 from "../../assets/projects/project-3.png";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 
@@ -30,7 +32,7 @@ function TopProjects() {
           liveLink="#"
         />
         <ProjectCard
-          image={porject1}
+          image={porject2}
           title="Personal Porfolio website"
           description="This is a portfolio website developed for myself. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, libero."
           icons={[
@@ -40,7 +42,7 @@ function TopProjects() {
           ]}
         />
         <ProjectCard
-          image={porject1}
+          image={porject3}
           title="Personal Porfolio website"
           description="This is a portfolio website developed for myself. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, libero."
           icons={[

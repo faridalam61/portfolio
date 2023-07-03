@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../../Components/Home/Hero";
 import TechStack from "../../Components/Home/TechStack";
 import TopProjects from "../../Components/Home/TopProjects";
+import Contact from "../../Components/Home/Contact";
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <Hero />
       <TechStack />
       <TopProjects />
+      <Contact/>
     </div>
   );
 }
