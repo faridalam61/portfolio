@@ -155,6 +155,7 @@ function TechStack() {
           </div>
         </div>
       </div>
+      <div id="projects"></div>
     </div>
   );
 }

@@ -27,22 +27,24 @@ function Hero() {
           achieve its goals by providing sustainable and scalable solutions.
         </p>
         <div className="flex gap-3 justify-center items-center mt-8">
-          <Icon
-            icon="mdi:github"
-            style={{ color: "white", fontSize: "40px" }}
-          />
-          <Icon
-            icon="mdi:linkedin"
-            style={{ color: "white", fontSize: "40px" }}
-          />
-          <Icon
-            icon="cib:telegram-plane"
-            style={{ color: "white", fontSize: "40px" }}
-          />
-          <Icon
-            icon="academicons:cv-square"
-            style={{ color: "white", fontSize: "36px" }}
-          />
+          <Link to="https://github.com/faridalam61">
+            <Icon
+              icon="mdi:github"
+              style={{ color: "white", fontSize: "40px" }}
+            />
+          </Link>
+          <Link to="https://www.linkedin.com/in/faridalam61/">
+            <Icon
+              icon="mdi:linkedin"
+              style={{ color: "white", fontSize: "40px" }}
+            />
+          </Link>
+          <a href="#contact">
+            <Icon
+              icon="cib:telegram-plane"
+              style={{ color: "white", fontSize: "40px" }}
+            />
+          </a>
         </div>
         <div className="flex flex-col lg:flex-row items-center justify-center mx-6 lg:mx-0 gap-9 mt-8 mb-10">
           <a
@@ -55,13 +57,16 @@ function Hero() {
             />
             See My Works
           </a>
-          <button className="bg-[#01FEE2] text-[#161b1f] text-xl py-3 px-6 rounded-sm font-semibold flex gap-2 hover:bg-[#01CBB4] w-full lg:w-auto justify-center">
+          <Link
+            to="https://drive.google.com/uc?export=download&id=1_IpkaJorKUA-KGSURIA2wMyVqfwD3i6e"
+            className="bg-[#01FEE2] text-[#161b1f] text-xl py-3 px-6 rounded-sm font-semibold flex gap-2 hover:bg-[#01CBB4] w-full lg:w-auto justify-center"
+          >
             <Icon
               icon="material-symbols:download"
               style={{ color: "#161b1f", fontSize: "30px" }}
             />
             Download Resume
-          </button>
+          </Link>
         </div>
       </div>
     </div>
