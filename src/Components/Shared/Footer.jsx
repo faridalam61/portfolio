@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
 function Footer() {
   return (
-    <div>
-        <div className="container text-center py-4 text-white mx-auto">
-            <p>&copy; 2023 Farid Alam</p>
-            <p>Developed by Farid Alam</p>
-        </div>
+    <div className="border-t border-[#161B1F]	">
+      <div className="container text-center py-4 text-white font-thin mx-auto">
+        <p>Copyright &copy; 2023 All rights reserved</p>
+        <p>Developed by Farid Alam</p>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

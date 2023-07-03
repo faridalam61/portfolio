@@ -6,17 +6,17 @@ function Header() {
     <div className="bg-white dark:bg-transparent text-slate-600 dark:text-white w-full py-6 px-4 lg:px-0 sticky top-0 backdrop-blur-lg z-50">
       <div className="container mx-auto flex items-center justify-between">
         <div>
-          <Link to="/" className="text-xl font-bold">
+          <Link to="/" className="text-xl font-light">
             &lt;FaridAlam&#47;&gt;
           </Link>
         </div>
         <div className="flex justify-end gap-4 lg:gap-8">
-          <Link to="/projects" className=" uppercase font-semibold">
+          <a href="#projects" className="  font-normal">
             Projects
-          </Link>
-          <Link to="/projects" className=" uppercase font-semibold">
+          </a>
+          <a href="#contact" className="  font-normal">
             Contact
-          </Link>
+          </a>
         </div>
       </div>
     </div>

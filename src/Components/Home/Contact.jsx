@@ -32,12 +32,12 @@ function Contact() {
       <h2 className="text-center font-normal text-4xl mb-10 lg:mb-0 text-white rainbow-text mt-28">
         Get In Touch
       </h2>
-      <p className="text-white mx-96 my-5 text-center">
+      <p className="text-white mx-4 lg:mx-96 my-5 text-center">
         If you have any inquiries, wish to engage my services, or simply want to
         extend a greeting, I will make every effort to promptly respond to you!
       </p>
 
-      <div className=" rounded-md p-6 w-3/5 mx-auto">
+      <div className=" rounded-md p-6 w-full lg:w-3/5 mx-auto">
         <form ref={form} onSubmit={sendEmail}>
           <div className="flex gap-5">
             <input
