@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "../Shared/ProjectCard";
-import porject1 from "../../assets/projects/project-1.png";
+import porject4 from "../../assets/projects/project-4.png";
 import porject2 from "../../assets/projects/project-2.png";
 import porject3 from "../../assets/projects/project-3.png";
 import { Icon } from "@iconify/react";
@@ -20,38 +20,48 @@ function TopProjects() {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-6 lg:px-0 container mx-auto">
         <ProjectCard
-          image={porject1}
-          title="Personal Porfolio website"
-          description="This is a portfolio website developed for myself. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, libero."
-          icons={[
-            "grommet-icons:reactjs",
-            "devicon:nodejs",
-            "devicon:tailwindcss",
-          ]}
-          github="http://github.com"
-          liveLink="#"
-        />
-        <ProjectCard
           image={porject2}
-          title="Personal Porfolio website"
-          description="This is a portfolio website developed for myself. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, libero."
+          title="Food Hub - Recipe hunter website"
+          description="Food Hub is a recipe website. Anyone can create an account and share recipes."
           icons={[
             "grommet-icons:reactjs",
             "devicon:nodejs",
+            "simple-icons:express",
+            "bxl:mongodb",
             "devicon:tailwindcss",
           ]}
+          github="https://github.com/faridalam61/food-hub-client"
+          liveLink="https://food-hub-6c467.web.app/"
         />
         <ProjectCard
           image={porject3}
-          title="Personal Porfolio website"
-          description="This is a portfolio website developed for myself. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, libero."
+          title="Yoga Fit – Course enrollment website "
+          description="Yoga Fit is a Course enrollment website where users can create accounts and purchase
+courses."
           icons={[
             "grommet-icons:reactjs",
             "devicon:nodejs",
+            "simple-icons:express",
+            "bxl:mongodb",
             "devicon:tailwindcss",
           ]}
-          github="http://github.com"
-          liveLink="#"
+          github="https://github.com/faridalam61/Yoga-Fit"
+          liveLink="https://summer-camp-school-645ed.web.app/"
+        />
+        <ProjectCard
+          image={porject4}
+          title="Little Racer – Toy marketplace website  "
+          description="Little Racer is a simple toy marketplace website. Built with React, ExpressJs, MonogDB, and
+Tailwind CSS."
+          icons={[
+            "grommet-icons:reactjs",
+            "devicon:nodejs",
+            "simple-icons:express",
+            "bxl:mongodb",
+            "devicon:tailwindcss",
+          ]}
+          github="https://github.com/faridalam61/toy-marketplace"
+          liveLink="https://toy-car-e96c2.web.app/"
         />
       </div>
       <div className="container mx-auto px-6 lg:px-0 flex flex-col items-center">
