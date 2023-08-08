@@ -7,7 +7,6 @@ import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import "react-tabs/style/react-tabs.css";
 
 function TopProjects() {
   return (
