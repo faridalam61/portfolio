@@ -6,6 +6,8 @@ import porject3 from "../../assets/projects/project-3.png";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 
 function TopProjects() {
   return (
@@ -18,60 +20,94 @@ function TopProjects() {
           Here is some mern stack projects that I've completed recently
         </p>
       </div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.2 }}
-        className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-6 lg:px-0 container mx-auto"
-      >
-        <ProjectCard
-          image={porject2}
-          title="Food Hub - Recipe hunter website"
-          description="Food Hub is a recipe website. Anyone can create an account and share recipes."
-          icons={[
-            "grommet-icons:reactjs",
-            "devicon:nodejs",
-            "simple-icons:express",
-            "bxl:mongodb",
-            "devicon:tailwindcss",
-          ]}
-          github="https://github.com/faridalam61/food-hub-client"
-          liveLink="https://food-hub-6c467.web.app/"
-        />
+      <Tabs>
+        <TabList className="text-center">
+          <Tab>React</Tab>
+          <Tab>Wordpress</Tab>
+        </TabList>
 
-        <ProjectCard
-          image={porject3}
-          title="Yoga Fit – Course enrollment website "
-          description="Yoga Fit is a Course enrollment website where users can create accounts and purchase
+        <TabPanel>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-6 lg:px-0 container mx-auto mt-10"
+          >
+            <ProjectCard
+              image={porject2}
+              title="Food Hub - Recipe hunter website"
+              description="Food Hub is a recipe website. Anyone can create an account and share recipes."
+              icons={[
+                "grommet-icons:reactjs",
+                "devicon:nodejs",
+                "simple-icons:express",
+                "bxl:mongodb",
+                "devicon:tailwindcss",
+              ]}
+              github="https://github.com/faridalam61/food-hub-client"
+              liveLink="https://food-hub-6c467.web.app/"
+            />
+
+            <ProjectCard
+              image={porject3}
+              title="Yoga Fit – Course enrollment website "
+              description="Yoga Fit is a Course enrollment website where users can create accounts and purchase
 courses."
-          icons={[
-            "grommet-icons:reactjs",
-            "devicon:nodejs",
-            "simple-icons:express",
-            "bxl:mongodb",
-            "devicon:tailwindcss",
-          ]}
-          github="https://github.com/faridalam61/Yoga-Fit"
-          liveLink="https://summer-camp-school-645ed.web.app/"
-        />
+              icons={[
+                "grommet-icons:reactjs",
+                "devicon:nodejs",
+                "simple-icons:express",
+                "bxl:mongodb",
+                "devicon:tailwindcss",
+              ]}
+              github="https://github.com/faridalam61/Yoga-Fit"
+              liveLink="https://summer-camp-school-645ed.web.app/"
+            />
 
-        <ProjectCard
-          image={porject4}
-          title="Little Racer – Toy marketplace website  "
-          description="Little Racer is a simple toy marketplace website. Built with React, ExpressJs, MonogDB, and
+            <ProjectCard
+              image={porject4}
+              title="Little Racer – Toy marketplace website  "
+              description="Little Racer is a simple toy marketplace website. Built with React, ExpressJs, MonogDB, and
 Tailwind CSS."
-          icons={[
-            "grommet-icons:reactjs",
-            "devicon:nodejs",
-            "simple-icons:express",
-            "bxl:mongodb",
-            "devicon:tailwindcss",
-          ]}
-          github="https://github.com/faridalam61/toy-marketplace"
-          liveLink="https://toy-car-e96c2.web.app/"
-        />
-      </motion.div>
+              icons={[
+                "grommet-icons:reactjs",
+                "devicon:nodejs",
+                "simple-icons:express",
+                "bxl:mongodb",
+                "devicon:tailwindcss",
+              ]}
+              github="https://github.com/faridalam61/toy-marketplace"
+              liveLink="https://toy-car-e96c2.web.app/"
+            />
+          </motion.div>
+        </TabPanel>
+        <TabPanel>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-6 lg:px-0 container mx-auto mt-10"
+          >
+            <ProjectCard
+              image={porject2}
+              title="Food Hub - Recipe hunter website"
+              description="Food Hub is a recipe website. Anyone can create an account and share recipes."
+              icons={[
+                "grommet-icons:reactjs",
+                "devicon:nodejs",
+                "simple-icons:express",
+                "bxl:mongodb",
+                "devicon:tailwindcss",
+              ]}
+              github="https://github.com/faridalam61/food-hub-client"
+              liveLink="https://food-hub-6c467.web.app/"
+            />
+          </motion.div>
+        </TabPanel>
+      </Tabs>
+
       <div className="container mx-auto px-6 lg:px-0 flex flex-col items-center">
         <Link
           to="/projects"
